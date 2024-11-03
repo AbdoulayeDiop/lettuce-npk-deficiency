@@ -1,6 +1,6 @@
 ---
 title: Lettuce NPK Deficiency Prediction
-emoji: 👁
+emoji: 🌿
 colorFrom: gray
 colorTo: yellow
 sdk: gradio

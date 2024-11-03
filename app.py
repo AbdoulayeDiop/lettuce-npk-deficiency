@@ -18,5 +18,5 @@ def prediction(img):
     # ])
     return {class_descriptions[v['label']]: v['score'] for v in pred}
 
-app = gr.Interface(prediction, inputs=gr.Image(type="pil"), outputs="label")
+app = gr.Interface(prediction, inputs=gr.Image(label="Input Image", type="pil"), outputs=gr.Label(label="Model prediction"))
 app.launch(share=True)
