@@ -16,7 +16,7 @@ def prediction(img):
     #     f"Prediction: {class_descriptions[pred[0]['label']]}",
     #     f"Confidence: {pred[0]['score']:.2f}",
     # ])
-    return {class_descriptions[pred['label']]: v['score'] for v in pred}
+    return {class_descriptions[v['label']]: v['score'] for v in pred}
 
 app = gr.Interface(prediction, inputs=gr.Image(type="pil"), outputs="label")
 app.launch(share=True)
